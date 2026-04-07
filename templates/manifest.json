@@ -14,16 +14,6 @@
       "similarTo": "Similar to major discount brokers"
     },
     {
-      "id": "growe",
-      "name": "Growe",
-      "description": "Modern app-based broker with zero delivery and competitive F&O rates",
-      "category": "discount",
-      "version": "2025-01-15",
-      "file": "brokers/growe.json",
-      "tags": ["zero-delivery", "app-based", "beginner-friendly"],
-      "similarTo": "Similar to app-first brokers"
-    },
-    {
       "id": "upstock",
       "name": "Upstock",
       "description": "Discount broker with zero delivery and flat per-order F&O charges",
