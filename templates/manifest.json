@@ -64,16 +64,6 @@
       "similarTo": "Similar to integrated bank brokers"
     },
     {
-      "id": "kotak-secure",
-      "name": "Kotak Secure",
-      "description": "Bank-backed broker with competitive rates and strong research",
-      "category": "full-service",
-      "version": "2025-01-15",
-      "file": "brokers/kotak-secure.json",
-      "tags": ["bank-backed", "competitive", "research"],
-      "similarTo": "Similar to bank-backed brokers"
-    },
-    {
       "id": "sharekan",
       "name": "Sharekan",
       "description": "Traditional broker with tiered plans and strong research",
@@ -83,15 +73,5 @@
       "tags": ["traditional", "tiered-plans", "research"],
       "similarTo": "Similar to traditional full-service brokers"
     },
-    {
-      "id": "motilal-ozwal",
-      "name": "Motilal Ozwal",
-      "description": "Research-focused full-service broker with advisory services",
-      "category": "full-service",
-      "version": "2025-01-15",
-      "file": "brokers/motilal-ozwal.json",
-      "tags": ["research", "advisory", "full-service", "pms"],
-      "similarTo": "Similar to research-focused brokers"
-    }
   ]
 }
