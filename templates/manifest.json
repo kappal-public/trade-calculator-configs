@@ -9,7 +9,7 @@
       "description": "Popular discount broker with zero delivery brokerage and flat ₹20 for F&O",
       "category": "discount",
       "version": "2025-01-15",
-      "file": "brokers/xerodha.json",
+      "file": "xerodha.json",
       "tags": ["zero-delivery", "flat-fo", "popular"],
       "similarTo": "Similar to major discount brokers"
     },
@@ -19,7 +19,7 @@
       "description": "Discount broker with zero delivery and flat per-order F&O charges",
       "category": "discount",
       "version": "2025-01-15",
-      "file": "brokers/upstock.json",
+      "file": "upstock.json",
       "tags": ["zero-delivery", "flat-fo", "popular"],
       "similarTo": "Similar to major discount brokers"
     },
@@ -29,7 +29,7 @@
       "description": "Established discount broker with zero delivery and flat F&O rates",
       "category": "discount",
       "version": "2025-01-15",
-      "file": "brokers/angle-one.json",
+      "file": "angle-one.json",
       "tags": ["zero-delivery", "flat-fo", "established"],
       "similarTo": "Similar to established discount brokers"
     },
@@ -39,9 +39,19 @@
       "description": "Budget discount broker with flat ₹20 across all segments",
       "category": "discount",
       "version": "2025-01-15",
-      "file": "brokers/5paise.json",
+      "file": "5paise.json",
       "tags": ["flat-rate", "budget", "all-segments"],
       "similarTo": "Similar to budget discount brokers"
+    },
+    {
+      "id": "growe",
+      "name": "Growe",
+      "description": "Free equity delivery with competitive F&O rates",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "growe.json",
+      "tags": ["free-delivery", "competitive-fo"],
+      "similarTo": "Similar to new-age discount brokers"
     },
     {
       "id": "hdfc-secure",
@@ -49,7 +59,7 @@
       "description": "Full-service bank-backed broker with percentage-based brokerage",
       "category": "full-service",
       "version": "2025-01-15",
-      "file": "brokers/hdfc-secure.json",
+      "file": "hdfc-secure.json",
       "tags": ["bank-backed", "percentage", "full-service", "research"],
       "similarTo": "Similar to bank-backed full-service brokers"
     },
@@ -59,7 +69,7 @@
       "description": "Popular bank-backed broker with 3-in-1 account convenience",
       "category": "full-service",
       "version": "2025-01-15",
-      "file": "brokers/icici-direkt.json",
+      "file": "icici-direkt.json",
       "tags": ["bank-backed", "3-in-1", "full-service", "research"],
       "similarTo": "Similar to integrated bank brokers"
     },
@@ -69,9 +79,9 @@
       "description": "Traditional broker with tiered plans and strong research",
       "category": "full-service",
       "version": "2025-01-15",
-      "file": "brokers/sharekan.json",
+      "file": "sharekan.json",
       "tags": ["traditional", "tiered-plans", "research"],
       "similarTo": "Similar to traditional full-service brokers"
-    },
+    }
   ]
 }
