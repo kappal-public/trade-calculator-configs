@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-04-08",
+  "disclaimer": "These templates are community-maintained and may not reflect current broker rates. Always verify charges with your broker's official calculator or documentation before making trading decisions. The app developers are not responsible for any discrepancies.",
+  "templates": [
+    {
+      "id": "xerodha",
+      "name": "Xerodha",
+      "description": "Popular discount broker with zero delivery brokerage and flat ₹20 for F&O",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "brokers/xerodha.json",
+      "tags": ["zero-delivery", "flat-fo", "popular"],
+      "similarTo": "Similar to major discount brokers"
+    },
+    {
+      "id": "growe",
+      "name": "Growe",
+      "description": "Modern app-based broker with zero delivery and competitive F&O rates",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "brokers/growe.json",
+      "tags": ["zero-delivery", "app-based", "beginner-friendly"],
+      "similarTo": "Similar to app-first brokers"
+    },
+    {
+      "id": "upstock",
+      "name": "Upstock",
+      "description": "Discount broker with zero delivery and flat per-order F&O charges",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "brokers/upstock.json",
+      "tags": ["zero-delivery", "flat-fo", "popular"],
+      "similarTo": "Similar to major discount brokers"
+    },
+    {
+      "id": "angle-one",
+      "name": "Angle One",
+      "description": "Established discount broker with zero delivery and flat F&O rates",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "brokers/angle-one.json",
+      "tags": ["zero-delivery", "flat-fo", "established"],
+      "similarTo": "Similar to established discount brokers"
+    },
+    {
+      "id": "5paise",
+      "name": "5paise",
+      "description": "Budget discount broker with flat ₹20 across all segments",
+      "category": "discount",
+      "version": "2025-01-15",
+      "file": "brokers/5paise.json",
+      "tags": ["flat-rate", "budget", "all-segments"],
+      "similarTo": "Similar to budget discount brokers"
+    },
+    {
+      "id": "hdfc-secure",
+      "name": "HDFC Secure",
+      "description": "Full-service bank-backed broker with percentage-based brokerage",
+      "category": "full-service",
+      "version": "2025-01-15",
+      "file": "brokers/hdfc-secure.json",
+      "tags": ["bank-backed", "percentage", "full-service", "research"],
+      "similarTo": "Similar to bank-backed full-service brokers"
+    },
+    {
+      "id": "icici-direkt",
+      "name": "ICICI Direkt",
+      "description": "Popular bank-backed broker with 3-in-1 account convenience",
+      "category": "full-service",
+      "version": "2025-01-15",
+      "file": "brokers/icici-direkt.json",
+      "tags": ["bank-backed", "3-in-1", "full-service", "research"],
+      "similarTo": "Similar to integrated bank brokers"
+    },
+    {
+      "id": "kotak-secure",
+      "name": "Kotak Secure",
+      "description": "Bank-backed broker with competitive rates and strong research",
+      "category": "full-service",
+      "version": "2025-01-15",
+      "file": "brokers/kotak-secure.json",
+      "tags": ["bank-backed", "competitive", "research"],
+      "similarTo": "Similar to bank-backed brokers"
+    },
+    {
+      "id": "sharekan",
+      "name": "Sharekan",
+      "description": "Traditional broker with tiered plans and strong research",
+      "category": "full-service",
+      "version": "2025-01-15",
+      "file": "brokers/sharekan.json",
+      "tags": ["traditional", "tiered-plans", "research"],
+      "similarTo": "Similar to traditional full-service brokers"
+    },
+    {
+      "id": "motilal-ozwal",
+      "name": "Motilal Ozwal",
+      "description": "Research-focused full-service broker with advisory services",
+      "category": "full-service",
+      "version": "2025-01-15",
+      "file": "brokers/motilal-ozwal.json",
+      "tags": ["research", "advisory", "full-service", "pms"],
+      "similarTo": "Similar to research-focused brokers"
+    }
+  ]
+}

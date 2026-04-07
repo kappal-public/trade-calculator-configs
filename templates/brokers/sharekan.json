@@ -1,0 +1,84 @@
+{
+  "$schema": "../../schemas/broker-template.schema.json",
+  "broker": {
+    "id": "sharekan",
+    "name": "Sharekan"
+  },
+  "version": "2025-01-15",
+  "contributors": ["community"],
+  "sources": [],
+  "disclaimer": "This template is community-maintained and may not reflect current rates. Always verify with official sources.",
+  "segments": {
+    "equity_delivery": {
+      "brokerage": { "type": "percentage", "value": 0.1, "minValue": 10, "maxValue": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.1 },
+      "exchangeCharges": { "nseRate": 0.00297, "bseRate": 0.00375 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.015 },
+      "dpCharges": 16,
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "equity_intraday": {
+      "brokerage": { "type": "percentage", "value": 0.05, "minValue": 10, "maxValue": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.025 },
+      "exchangeCharges": { "nseRate": 0.00297, "bseRate": 0.00375 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.003 },
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "equity_futures": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.0125 },
+      "exchangeCharges": { "nseRate": 0.00173, "bseRate": 0 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.002 },
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "equity_options": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.0625 },
+      "exchangeCharges": { "nseRate": 0.03503, "bseRate": 0 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.003 },
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "currency_futures": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0 },
+      "exchangeCharges": { "nseRate": 0.00035, "bseRate": 0.00045 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.0001 },
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "currency_options": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0 },
+      "exchangeCharges": { "nseRate": 0.0311, "bseRate": 0.001 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.0001 },
+      "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
+    },
+    "commodity_futures": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.01 },
+      "exchangeCharges": { "nseRate": 0, "bseRate": 0, "mcxRate": 0.0021 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.002 }
+    },
+    "commodity_options": {
+      "brokerage": { "type": "flat", "value": 20 },
+      "stt": { "buyRate": 0, "sellRate": 0.05 },
+      "exchangeCharges": { "nseRate": 0, "bseRate": 0, "mcxRate": 0.0318 },
+      "sebiCharges": 10,
+      "gst": 18,
+      "stampDuty": { "rate": 0.003 }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": "2026.03",
+  "updatedAt": "2026-03-18T00:00:00.000Z",
+  "releaseNotes": "Initial default template with Indian market charges (March 2026)",
+  "india": {
+    "market": "INDIA",
+    "segments": {
+      "equity_delivery": {
+        "brokerage": { "type": "flat", "value": 0 },
+        "stt": { "buyRate": 0.1, "sellRate": 0.1 },
+        "exchangeCharges": { "nseRate": 0.00307, "bseRate": 0.00375 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.015 },
+        "dpCharges": 15.34,
+        "dpChargesEnabled": true,
+        "ipftCharges": { "rate": 0.01, "unit": "crore", "includesGst": false }
+      },
+      "equity_intraday": {
+        "brokerage": { "type": "percentage", "value": 0.03, "maxValue": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0.025 },
+        "exchangeCharges": { "nseRate": 0.00307, "bseRate": 0.00375 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.003 },
+        "ipftCharges": { "rate": 0.01, "unit": "crore", "includesGst": false }
+      },
+      "equity_futures": {
+        "brokerage": { "type": "percentage", "value": 0.03, "maxValue": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0.05 },
+        "exchangeCharges": { "nseRate": 0.00183, "bseRate": 0 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.002 },
+        "ipftCharges": { "rate": 0.01, "unit": "crore", "includesGst": false }
+      },
+      "equity_options": {
+        "brokerage": { "type": "per_order", "value": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0.125 },
+        "exchangeCharges": { "nseRate": 0.03503, "bseRate": 0 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.003 },
+        "ipftCharges": { "rate": 0.01, "unit": "crore", "includesGst": false }
+      },
+      "currency_futures": {
+        "brokerage": { "type": "percentage", "value": 0.03, "maxValue": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0 },
+        "exchangeCharges": { "nseRate": 0.00035, "bseRate": 0 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.0001 },
+        "ipftCharges": { "rate": 0.05, "unit": "lakh", "includesGst": false }
+      },
+      "currency_options": {
+        "brokerage": { "type": "per_order", "value": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0 },
+        "exchangeCharges": { "nseRate": 0.0311, "bseRate": 0 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.0001 },
+        "ipftCharges": { "rate": 2, "unit": "lakh", "includesGst": false }
+      },
+      "commodity_futures": {
+        "brokerage": { "type": "percentage", "value": 0.03, "maxValue": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0.01 },
+        "exchangeCharges": { "nseRate": 0, "bseRate": 0, "mcxRate": 0.0026 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.002 }
+      },
+      "commodity_options": {
+        "brokerage": { "type": "per_order", "value": 20 },
+        "stt": { "buyRate": 0, "sellRate": 0.01 },
+        "exchangeCharges": { "nseRate": 0, "bseRate": 0, "mcxRate": 0.0026 },
+        "sebiCharges": 10,
+        "gst": 18,
+        "stampDuty": { "rate": 0.002 }
+      }
+    }
+  }
+}

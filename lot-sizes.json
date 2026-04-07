@@ -1,0 +1,14 @@
+{
+  "version": "2026.03",
+  "updatedAt": "2026-03-20T00:00:00Z",
+  "defaults": {
+    "equity_delivery": 1,
+    "equity_intraday": 1,
+    "equity_futures": 25,
+    "equity_options": 25,
+    "currency_futures": 1000,
+    "currency_options": 1000,
+    "commodity_futures": 1,
+    "commodity_options": 1
+  }
+}

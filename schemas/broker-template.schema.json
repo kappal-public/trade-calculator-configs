@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kappal-public/trade-calculator-configs/schemas/broker-template.schema.json",
+  "title": "Broker Template",
+  "description": "Schema for broker charge configuration templates",
+  "type": "object",
+  "required": ["broker", "version", "segments"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "broker": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Lowercase hyphenated broker identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name for the broker"
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date when rates were last verified (YYYY-MM-DD)"
+    },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GitHub usernames of contributors"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "description": "URLs where rates were verified"
+    },
+    "disclaimer": { "type": "string" },
+    "segments": {
+      "type": "object",
+      "required": [
+        "equity_delivery",
+        "equity_intraday",
+        "equity_futures",
+        "equity_options",
+        "currency_futures",
+        "currency_options",
+        "commodity_futures",
+        "commodity_options"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "equity_delivery": { "$ref": "#/$defs/segmentWithDP" },
+        "equity_intraday": { "$ref": "#/$defs/segment" },
+        "equity_futures": { "$ref": "#/$defs/segment" },
+        "equity_options": { "$ref": "#/$defs/segment" },
+        "currency_futures": { "$ref": "#/$defs/segment" },
+        "currency_options": { "$ref": "#/$defs/segment" },
+        "commodity_futures": { "$ref": "#/$defs/commoditySegment" },
+        "commodity_options": { "$ref": "#/$defs/commoditySegment" }
+      }
+    }
+  },
+  "$defs": {
+    "brokerage": {
+      "type": "object",
+      "required": ["type", "value"],
+      "properties": {
+        "type": { "enum": ["flat", "percentage", "per_order"] },
+        "value": { "type": "number", "minimum": 0 },
+        "minValue": { "type": "number", "minimum": 0 },
+        "maxValue": { "type": "number", "minimum": 0 }
+      }
+    },
+    "stt": {
+      "type": "object",
+      "required": ["buyRate", "sellRate"],
+      "properties": {
+        "buyRate": { "type": "number", "minimum": 0 },
+        "sellRate": { "type": "number", "minimum": 0 }
+      }
+    },
+    "exchangeCharges": {
+      "type": "object",
+      "required": ["nseRate", "bseRate"],
+      "properties": {
+        "nseRate": { "type": "number", "minimum": 0 },
+        "bseRate": { "type": "number", "minimum": 0 }
+      }
+    },
+    "commodityExchangeCharges": {
+      "type": "object",
+      "required": ["nseRate", "bseRate", "mcxRate"],
+      "properties": {
+        "nseRate": { "type": "number", "minimum": 0 },
+        "bseRate": { "type": "number", "minimum": 0 },
+        "mcxRate": { "type": "number", "minimum": 0 }
+      }
+    },
+    "stampDuty": {
+      "type": "object",
+      "required": ["rate"],
+      "properties": {
+        "rate": { "type": "number", "minimum": 0 }
+      }
+    },
+    "ipftCharges": {
+      "type": "object",
+      "required": ["rate", "unit", "includesGst"],
+      "properties": {
+        "rate": { "type": "number", "minimum": 0 },
+        "unit": { "enum": ["crore", "lakh"] },
+        "includesGst": { "type": "boolean" }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "required": ["brokerage", "stt", "exchangeCharges", "sebiCharges", "gst", "stampDuty"],
+      "properties": {
+        "brokerage": { "$ref": "#/$defs/brokerage" },
+        "stt": { "$ref": "#/$defs/stt" },
+        "exchangeCharges": { "$ref": "#/$defs/exchangeCharges" },
+        "sebiCharges": { "type": "number", "minimum": 0 },
+        "gst": { "type": "number", "minimum": 0 },
+        "stampDuty": { "$ref": "#/$defs/stampDuty" },
+        "ipftCharges": { "$ref": "#/$defs/ipftCharges" }
+      }
+    },
+    "segmentWithDP": {
+      "allOf": [
+        { "$ref": "#/$defs/segment" },
+        {
+          "properties": {
+            "dpCharges": { "type": "number", "minimum": 0 }
+          }
+        }
+      ]
+    },
+    "commoditySegment": {
+      "type": "object",
+      "required": ["brokerage", "stt", "exchangeCharges", "sebiCharges", "gst", "stampDuty"],
+      "properties": {
+        "brokerage": { "$ref": "#/$defs/brokerage" },
+        "stt": { "$ref": "#/$defs/stt" },
+        "exchangeCharges": { "$ref": "#/$defs/commodityExchangeCharges" },
+        "sebiCharges": { "type": "number", "minimum": 0 },
+        "gst": { "type": "number", "minimum": 0 },
+        "stampDuty": { "$ref": "#/$defs/stampDuty" }
+      }
+    }
+  }
+}

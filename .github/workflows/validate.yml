@@ -1,0 +1,61 @@
+name: Validate Templates
+
+on:
+  pull_request:
+    paths:
+      - 'templates/**'
+      - 'lot-sizes.json'
+      - 'default-template.json'
+  push:
+    branches: [main]
+    paths:
+      - 'templates/**'
+      - 'lot-sizes.json'
+      - 'default-template.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install ajv ajv-cli ajv-formats
+      
+      - name: Validate broker templates
+        run: |
+          echo "Validating broker templates..."
+          for f in templates/brokers/*.json; do
+            echo "Checking $f"
+            npx ajv validate -s schemas/broker-template.schema.json -d "$f" --spec=draft2020 -c ajv-formats || exit 1
+          done
+          echo "All broker templates valid!"
+      
+      - name: Validate JSON syntax
+        run: |
+          echo "Checking JSON syntax..."
+          for f in templates/*.json templates/brokers/*.json lot-sizes.json default-template.json; do
+            if [ -f "$f" ]; then
+              echo "Parsing $f"
+              node -e "JSON.parse(require('fs').readFileSync('$f'))" || exit 1
+            fi
+          done
+          echo "All JSON files valid!"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check JSON formatting
+        run: |
+          echo "Checking JSON formatting..."
+          for f in templates/brokers/*.json; do
+            if ! diff -q <(cat "$f") <(node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('$f')), null, 2))") > /dev/null 2>&1; then
+              echo "Warning: $f may not be properly formatted (2-space indent)"
+            fi
+          done
