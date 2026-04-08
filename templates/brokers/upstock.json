@@ -21,7 +21,7 @@
       "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
     },
     "equity_intraday": {
-      "brokerage": { "type": "percentage", "value": 0.05, "maxValue": 20 },
+      "brokerage": { "type": "percentage", "value": 0.1, "maxValue": 20 },
       "stt": { "buyRate": 0, "sellRate": 0.025 },
       "exchangeCharges": { "nseRate": 0.00297, "bseRate": 0.00375 },
       "sebiCharges": 10,
