@@ -6,8 +6,8 @@
   },
   "version": "2026-04-08",
   "contributors": ["community"],
-  "sources": [],
-  "disclaimer": "This template is community-maintained and may not reflect current rates. Always verify with official sources.",
+  "sources": ["https://zerodha.com/charges"],
+  "disclaimer": "Rates verified against Zerodha brokerage calculator. Note: Zerodha's website uses floor rounding for display (small charges round down to 0), while our app uses round half-up. For small trades (<₹1000), displayed values may differ slightly but calculations are mathematically accurate.",
   "segments": {
     "equity_delivery": {
       "brokerage": { "type": "flat", "value": 0 },
