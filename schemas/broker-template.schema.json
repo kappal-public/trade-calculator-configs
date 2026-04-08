@@ -133,7 +133,11 @@
         { "$ref": "#/$defs/segment" },
         {
           "properties": {
-            "dpCharges": { "type": "number", "minimum": 0 }
+            "dpCharges": { "type": "number", "minimum": 0 },
+            "dpChargesInGstBase": {
+              "type": "boolean",
+              "description": "Whether DP charges are included in GST calculation base (broker-specific, e.g. Upstox = true, Zerodha = false)"
+            }
           }
         }
       ]
