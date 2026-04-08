@@ -10,13 +10,14 @@
   "disclaimer": "This template is community-maintained and may not reflect current rates. Always verify with official sources.",
   "segments": {
     "equity_delivery": {
-      "brokerage": { "type": "flat", "value": 0 },
+      "brokerage": { "type": "percentage", "value": 2.5, "maxValue": 20 },
       "stt": { "buyRate": 0.1, "sellRate": 0.1 },
       "exchangeCharges": { "nseRate": 0.00297, "bseRate": 0.00375 },
       "sebiCharges": 10,
       "gst": 18,
       "stampDuty": { "rate": 0.015 },
       "dpCharges": 20,
+      "dpChargesInGstBase": true,
       "ipftCharges": { "rate": 10, "unit": "crore", "includesGst": false }
     },
     "equity_intraday": {
