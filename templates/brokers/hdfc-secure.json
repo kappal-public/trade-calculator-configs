@@ -4,14 +4,14 @@
     "id": "hdfc-secure",
     "name": "HDFC Secure"
   },
-  "version": "2025-01-15",
+  "version": "2026-04-08",
   "contributors": ["community"],
   "sources": [],
   "disclaimer": "This template is community-maintained and may not reflect current rates. Always verify with official sources.",
   "segments": {
     "equity_delivery": {
       "brokerage": { "type": "percentage", "value": 0.5, "minValue": 25 },
-      "stt": { "buyRate": 0, "sellRate": 0.1 },
+      "stt": { "buyRate": 0.1, "sellRate": 0.1 },
       "exchangeCharges": { "nseRate": 0.00297, "bseRate": 0.00375 },
       "sebiCharges": 10,
       "gst": 18,
@@ -30,7 +30,7 @@
     },
     "equity_futures": {
       "brokerage": { "type": "percentage", "value": 0.03, "minValue": 25 },
-      "stt": { "buyRate": 0, "sellRate": 0.0125 },
+      "stt": { "buyRate": 0, "sellRate": 0.05 },
       "exchangeCharges": { "nseRate": 0.00173, "bseRate": 0 },
       "sebiCharges": 10,
       "gst": 18,
@@ -39,7 +39,7 @@
     },
     "equity_options": {
       "brokerage": { "type": "percentage", "value": 0.03, "minValue": 25, "maxValue": 100 },
-      "stt": { "buyRate": 0, "sellRate": 0.0625 },
+      "stt": { "buyRate": 0, "sellRate": 0.15 },
       "exchangeCharges": { "nseRate": 0.03503, "bseRate": 0 },
       "sebiCharges": 10,
       "gst": 18,
