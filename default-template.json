@@ -1,7 +1,7 @@
 {
-  "version": "2026.03",
-  "updatedAt": "2026-03-18T00:00:00.000Z",
-  "releaseNotes": "Initial default template with Indian market charges (March 2026)",
+  "version": "2026.04",
+  "updatedAt": "2026-04-08T00:00:00.000Z",
+  "releaseNotes": "Updated STT rates for April 2026: Equity delivery 0.1% both sides, Futures 0.05% sell, Options 0.15% sell",
   "india": {
     "market": "INDIA",
     "segments": {
@@ -36,7 +36,7 @@
       },
       "equity_options": {
         "brokerage": { "type": "per_order", "value": 20 },
-        "stt": { "buyRate": 0, "sellRate": 0.125 },
+        "stt": { "buyRate": 0, "sellRate": 0.15 },
         "exchangeCharges": { "nseRate": 0.03503, "bseRate": 0 },
         "sebiCharges": 10,
         "gst": 18,
