@@ -1,8 +1,8 @@
 {
   "$schema": "../../schemas/broker-template.schema.json",
   "broker": {
-    "id": "icici-direkt",
-    "name": "ICICI Direkt"
+    "id": "icic-direkt",
+    "name": "ICIC Direkt"
   },
   "version": "2026-04-08",
   "contributors": ["community"],
