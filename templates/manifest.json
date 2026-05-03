@@ -54,8 +54,8 @@
       "similarTo": "Similar to new-age discount brokers"
     },
     {
-      "id": "hdfc-secure",
-      "name": "HDFC Secure",
+      "id": "hdfe-secure",
+      "name": "HDFE Secure",
       "description": "Full-service bank-backed broker with percentage-based brokerage",
       "category": "full-service",
       "version": "2025-01-15",
