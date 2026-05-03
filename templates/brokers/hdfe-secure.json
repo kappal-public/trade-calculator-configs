@@ -1,8 +1,8 @@
 {
   "$schema": "../../schemas/broker-template.schema.json",
   "broker": {
-    "id": "hdfc-secure",
-    "name": "HDFC Secure"
+    "id": "hdfe-secure",
+    "name": "HDFE Secure"
   },
   "version": "2026-04-08",
   "contributors": ["community"],
