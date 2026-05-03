@@ -64,8 +64,8 @@
       "similarTo": "Similar to bank-backed full-service brokers"
     },
     {
-      "id": "icici-direkt",
-      "name": "ICICI Direkt",
+      "id": "icic-direkt",
+      "name": "ICIC Direkt",
       "description": "Popular bank-backed broker with 3-in-1 account convenience",
       "category": "full-service",
       "version": "2025-01-15",
