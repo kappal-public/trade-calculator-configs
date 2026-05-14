@@ -1,36 +1,86 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-04-08",
+  "lastUpdated": "2026-05-14",
   "disclaimer": "These templates are community-maintained and may not reflect current broker rates. Always verify charges with your broker's official calculator or documentation before making trading decisions. The app developers are not responsible for any discrepancies.",
   "templates": [
     {
-      "id": "xerodha",
-      "name": "Zer...",
+      "id": "zerodha",
+      "name": "Zerodha",
       "description": "Popular discount broker with zero delivery brokerage and flat ₹20 for F&O",
       "category": "discount",
-      "version": "2025-01-15",
-      "file": "xerodha.json",
+      "version": "2026-05-14",
+      "file": "zerodha.json",
       "tags": ["zero-delivery", "flat-fo", "popular"],
       "similarTo": "Similar to major discount brokers"
     },
     {
-      "id": "upstock",
-      "name": "Ups...",
-      "description": "Discount broker with zero delivery and flat per-order F&O charges",
+      "id": "groww",
+      "name": "Groww",
+      "description": "App-based discount broker with flat ₹20 cap on brokerage across all segments",
       "category": "discount",
-      "version": "2025-01-15",
-      "file": "upstock.json",
-      "tags": ["zero-delivery", "flat-fo", "popular"],
+      "version": "2026-05-14",
+      "file": "groww.json",
+      "tags": ["flat-fo", "app-based", "beginner-friendly"],
+      "similarTo": "Similar to app-first brokers"
+    },
+    {
+      "id": "upstox",
+      "name": "Upstox",
+      "description": "Discount broker with flat ₹20 delivery and capped percentage for F&O",
+      "category": "discount",
+      "version": "2026-05-14",
+      "file": "upstox.json",
+      "tags": ["flat-delivery", "flat-fo", "popular"],
       "similarTo": "Similar to major discount brokers"
     },
     {
-      "id": "sharekan",
-      "name": "Sha...",
-      "description": "Traditional broker with tiered plans and strong research",
+      "id": "angel-one",
+      "name": "Angel One",
+      "description": "Established discount broker with 0.1% or ₹20 brokerage cap across segments",
+      "category": "discount",
+      "version": "2026-05-14",
+      "file": "angel-one.json",
+      "tags": ["flat-fo", "established"],
+      "similarTo": "Similar to established discount brokers"
+    },
+    {
+      "id": "5paisa",
+      "name": "5paisa",
+      "description": "Budget discount broker with flat ₹20 across all segments including delivery",
+      "category": "discount",
+      "version": "2026-05-14",
+      "file": "5paisa.json",
+      "tags": ["flat-rate", "budget", "all-segments"],
+      "similarTo": "Similar to budget discount brokers"
+    },
+    {
+      "id": "hdfc-sky",
+      "name": "HDFC Sky",
+      "description": "HDFC's discount broker platform with flat ₹20 cap on all segments",
+      "category": "discount",
+      "version": "2026-05-14",
+      "file": "hdfc-sky.json",
+      "tags": ["bank-backed", "flat-rate", "discount"],
+      "similarTo": "Similar to bank-backed discount brokers"
+    },
+    {
+      "id": "icici-direct",
+      "name": "ICICI Direct",
+      "description": "Bank-backed broker with 3-in-1 account convenience (iValue plan rates)",
       "category": "full-service",
-      "version": "2025-01-15",
-      "file": "sharekan.json",
-      "tags": ["traditional", "tiered-plans", "research"],
+      "version": "2026-05-14",
+      "file": "icici-direct.json",
+      "tags": ["bank-backed", "3-in-1", "full-service", "research"],
+      "similarTo": "Similar to integrated bank brokers"
+    },
+    {
+      "id": "sharekhan",
+      "name": "Sharekhan",
+      "description": "Traditional full-service broker with percentage-based brokerage and strong research",
+      "category": "full-service",
+      "version": "2026-05-14",
+      "file": "sharekhan.json",
+      "tags": ["traditional", "percentage-based", "research"],
       "similarTo": "Similar to traditional full-service brokers"
     }
   ]
